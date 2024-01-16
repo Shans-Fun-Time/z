@@ -1,0 +1,79 @@
+[INFO ] 2024-01-16 02:12:17.673 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:16:27.504 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:17:07.693 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:17:39.376 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:17:39.666 [main] ClientServiceImpl - Creating client
+[ERROR] 2024-01-16 02:17:39.700 [main] ClientDAO - Unable to create client: 
+java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.solvd.laba.persistence.impl.ClientDAO.create(ClientDAO.java:34) [classes/:?]
+	at com.solvd.laba.service.impl.ClientServiceImpl.create(ClientServiceImpl.java:35) [classes/:?]
+	at com.solvd.laba.Main.main(Main.java:22) [classes/:?]
+[INFO ] 2024-01-16 02:19:36.203 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:19:36.455 [main] ClientServiceImpl - Creating client
+[ERROR] 2024-01-16 02:19:36.478 [main] ClientDAO - Unable to create client: 
+java.sql.SQLIntegrityConstraintViolationException: Column 'name' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.solvd.laba.persistence.impl.ClientDAO.create(ClientDAO.java:34) [classes/:?]
+	at com.solvd.laba.service.impl.ClientServiceImpl.create(ClientServiceImpl.java:35) [classes/:?]
+	at com.solvd.laba.Main.main(Main.java:26) [classes/:?]
+[INFO ] 2024-01-16 02:20:35.003 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:20:35.267 [main] ClientServiceImpl - Creating client
+[ERROR] 2024-01-16 02:20:35.299 [main] ClientDAO - Unable to create client: 
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`building_company`.`clients`, CONSTRAINT `fk_clients_building_company1` FOREIGN KEY (`building_company_id`) REFERENCES `building_company` (`id`) ON DELETE CASCADE)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.solvd.laba.persistence.impl.ClientDAO.create(ClientDAO.java:34) [classes/:?]
+	at com.solvd.laba.service.impl.ClientServiceImpl.create(ClientServiceImpl.java:35) [classes/:?]
+	at com.solvd.laba.Main.main(Main.java:26) [classes/:?]
+[INFO ] 2024-01-16 02:22:40.151 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:22:40.415 [main] BuildingCompanyServiceImpl - Creating building company
+[INFO ] 2024-01-16 02:22:40.439 [main] BuildingCompanyDAO - Building Company created: BuildingCompany{id=1, name='Skyscraper Inc.', location='Metropolis'}
+[INFO ] 2024-01-16 02:25:52.682 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:25:52.951 [main] BuildingCompanyServiceImpl - Creating building company
+[ERROR] 2024-01-16 02:25:52.976 [main] BuildingCompanyDAO - Unable to create building company: 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'Skyscraper Inc.' for key 'building_company.name_UNIQUE'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.solvd.laba.persistence.impl.BuildingCompanyDAO.create(BuildingCompanyDAO.java:47) [classes/:?]
+	at com.solvd.laba.service.impl.BuildingCompanyServiceImpl.create(BuildingCompanyServiceImpl.java:42) [classes/:?]
+	at com.solvd.laba.Main.main(Main.java:105) [classes/:?]
+[INFO ] 2024-01-16 02:26:08.851 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:26:09.117 [main] BuildingCompanyServiceImpl - Creating building company
+[ERROR] 2024-01-16 02:26:09.141 [main] BuildingCompanyDAO - Unable to create building company: 
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'Metropolis' for key 'building_company.location_UNIQUE'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.solvd.laba.persistence.impl.BuildingCompanyDAO.create(BuildingCompanyDAO.java:47) [classes/:?]
+	at com.solvd.laba.service.impl.BuildingCompanyServiceImpl.create(BuildingCompanyServiceImpl.java:42) [classes/:?]
+	at com.solvd.laba.Main.main(Main.java:105) [classes/:?]
+[INFO ] 2024-01-16 02:26:18.001 [main] Config - Configuration properties loaded successfully. Driver: com.mysql.cj.jdbc.Driver
+[INFO ] 2024-01-16 02:26:18.266 [main] BuildingCompanyServiceImpl - Creating building company
+[INFO ] 2024-01-16 02:26:18.279 [main] BuildingCompanyDAO - Building Company created: BuildingCompany{id=4, name='Skyscraper In', location='Metropol'}
